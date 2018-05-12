@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Authors>cdorst</Authors>
+    <Copyright>Copyright © Christopher Dorst</Copyright>
+    <Description>Service responsible for getting a reference to a blob (which may or may not yet exist) inside an existing blob container</Description>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageIconUrl>https://cdorst-dev.azureedge.net/nuget/package-icon-64.png</PackageIconUrl>
+    <PackageId>CDorst.Cloud.Azure.Storage.Services.Blobs.BlobReference</PackageId>
+    <PackageLicenseUrl>https://github.com/cdorst/Cloud.Azure.Storage.Services.Blobs.BlobReference/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/cdorst/Cloud.Azure.Storage.Services.Blobs.BlobReference</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/cdorst/Cloud.Azure.Storage.Services.Blobs.BlobReference</RepositoryUrl>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CDorst.Cloud.Azure.Storage.Services.Blobs.Interfaces.BlobContainerReferenceGetter" Version="1.0.0" />
+    <PackageReference Include="CDorst.Cloud.Azure.Storage.Services.Blobs.Interfaces.ExistingContainerBlobReferenceGetter" Version="1.0.0" />
+  </ItemGroup>
+
+</Project>
